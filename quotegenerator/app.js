@@ -22,9 +22,7 @@ const newQuote = () => {
   
 
 };
-const buttonQuote =()=>{
-    newQuoteBtn.addEventListener('click', newQuote)
-}
+
 
 const getQuotes = async () => {
   const apiUrl = 'https://type.fit/api/quotes';
@@ -35,6 +33,15 @@ const getQuotes = async () => {
     newQuote();
   } catch (error) {}
 };
+//Tweet Button
+const tweetQuote = ()=>{
+  const tweetUrl = `https://twitter.com/intent/tweet?text=${quoteDisplay.textContent} - ${authorName.textContent}`;
+  window.open(tweetUrl, '_blank')
+}
+const buttonQuote =()=>{
+  newQuoteBtn.addEventListener('click', newQuote)
+}
+twitterBtn.addEventListener('click', tweetQuote)
 
 getQuotes();
 buttonQuote()
