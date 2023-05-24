@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap");
+
+html {
+  box-sizing: border-box;
+}
+body {
+  background-image: linear-gradient(
+    to right,
+    rgba(81, 4, 68, 0.6),
+    rgba(241, 240, 242, 0.6)
+  ),
+  url( './img/pastel.png');
+  margin: 0;
+  min-height: 100vh;
+  color: black;
+  font-family: Montserrat;
+  font-weight: 700;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.quote {
+  width: auto;
+  max-width: 900px;
+  padding: 20px 30px;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.4);
+  box-shadow: 0 10px 10px 10px rgba(0, 0, 0, 0.1);
+}
+.quote-text {
+  font-size: 2.2rem;
+}
+.long-quote {
+  font-size: 1.9rem;
+}
+.fa-quote-left {
+  font-size: 4rem;
+}
+.quote-author {
+  margin-top: 15px;
+  font-size: 1.5rem;
+  font-weight: 400;
+  font-style: italic;
+}
+
+
+.button-container{
+    margin:15px;
+    display: flex;
+    justify-content: space-between;
+}
+button{
+    cursor: pointer;
+    font-size: 1,2rem;
+    height: 2.5rem;
+    border: none;
+    border-radius: 10px;
+    color: #f7ede2;
+    background-color: #755778;
+    outline: none;
+    padding:0.5rem 1.7rem;
+    box-shadow: 0 0.3rem rgba(84, 73, 87, 0.6);
+}
+button:hover{
+    filter: brightness(120%);
+}
+button:active{
+    transform: translate(0 0.3rem);
+    box-shadow: 0 0.1rem rgba(255,255,255, 0.6);
+}
+.twitter-button:hover{
+    color: #31a1f3;
+}
+.fa-twitter{
+    font-size: 1.3rem;
+}
+
+
+@media screen and (max-width: 900px) {
+  .quote-container {
+    margin: auto 20px;
+  }
+
+  .quote-text {
+    font-size: 1.9rem;
+  }
+}
