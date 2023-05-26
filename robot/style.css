@@ -1,0 +1,87 @@
+/*import google fonts*/
+
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200;300&family=Merriweather:wght@300&family=Montserrat:wght@100&display=swap');
+
+/** style the entire page*/
+body {
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(180deg, #210b2c 25%, #252422 75%);
+}
+
+/* center everything inside the main box*/
+#main-container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+/* style box for the robot voice */
+#voice-machine-container {
+  background: linear-gradient(140deg, #38b000 30%, #2b0e66 65%);
+  box-shadow: 0 0 0.2rem #fff, 0 0 0.2rem #fff, 0 0 2rem #bc00dd,
+    0 0 0.8rem #bc00dd, 0 0 2.8rem #bc00dd, inset 0 0 1.3rem #f500bd;
+  border-radius: 1rem;
+  padding: 2rem;
+  letter-spacing: 0.27rem;
+}
+/*style title of app*/
+#app-title {
+  color: #fff;
+  font-family: 'Dosis', sans-serif;
+  text-align: center;
+  text-shadow: 1px 1px 2px #fff, 0 0 1em #bc00dd, 0 0 0.2em #bc00dd,
+    0 0 2.8rem #bc00dd;
+}
+/* style text area*/
+textarea {
+  min-width: 330px;
+  min-height: 200px;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  font-family: 'Merriweather', serif;
+  font-size: 1.3rem;
+  border-radius: 1rem;
+  background-color: #210b2c;
+  color: #f20089;
+  border: 2px solid #ccff33;
+}
+/*style button box*/
+.btn-container {
+  display: flex;
+  justify-content: space-evenly;
+}
+/*style speak button*/
+#speak-btn {
+  font-family: 'Merriweather', serif;
+  font-weight: 900;
+  font-size: 1rem;
+  letter-spacing: 0.2rem;
+  padding: 1rem;
+  border-radius: 1rem;
+  border: 0;
+  width: 100%;
+  background-color: #492e7d;
+  color: #4ea8de;
+  box-shadow: 0 0 0.2rem #fff, 0 0 0.2rem #fff, 0 0 1.5rem #9ef01a,
+    0 0 0.8rem #9ef01a, 0 0 1.5rem #9ef01a, inset 0 0 1.3rem #9ef01a;
+}
+#speak-btn:hover{
+    cursor: pointer;
+    color: #492e7d;
+    background-color:#4ea8de ;
+}
+/**/
+/**/
+/**/
+/**/
+/**/
+/**/
+/**/
+/**/
+/**/
+/**/
+/**/ /**/
