@@ -69,10 +69,34 @@ textarea {
   box-shadow: 0 0 0.2rem #fff, 0 0 0.2rem #fff, 0 0 1.5rem #9ef01a,
     0 0 0.8rem #9ef01a, 0 0 1.5rem #9ef01a, inset 0 0 1.3rem #9ef01a;
 }
-#speak-btn:hover{
+#speak-btn:hover {
+  cursor: pointer;
+  color: #492e7d;
+  background-color: #4ea8de;
+}
+#footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  height: 8rem;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: #210b2c;
+}
+#voice-btn{
+    margin: 2rem;
+    font-size: 2.2rem;
+    border-radius: 1rem;
+    border: 0;
+    background:#4ea8de ;
+    box-shadow: 0 0 0.2rem #fff, 0 0 0.2rem #fff, 0 0 1.5rem #00a1d5,
+    0 0 0.8rem #00a1d5, 0 0 1.5rem #00a1d5, inset 0 0 1.3rem #00a1d5;
+}
+#voice-btn:hover{
     cursor: pointer;
-    color: #492e7d;
-    background-color:#4ea8de ;
+    background-color: #80ffdb;
 }
 /**/
 /**/
