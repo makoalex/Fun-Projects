@@ -25,14 +25,14 @@ body {
   height: 95vh;
   background-image: linear-gradient(
       to right,
-      rgba(54, 186, 14, 0.6),
-      rgba(148, 157, 149, 0.6)
+      rgba(62, 221, 18, 0.5),
+      rgba(189, 232, 151, 0.6)
     ),
-    url(../img/lushpc.png);
+    url(../img/hero.jpg);
   background-size: cover;
   background-position: top;
 
-  clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 70vh, 0 100%);
 }
 .text-box {
   position: absolute;
@@ -92,13 +92,25 @@ body {
   }
 }
 
+@keyframes moveInButton {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 .btn:link{
-  padding: 13px 40px;
+  margin-top: 3rem;
+  padding: 15px 40px;
   text-transform: uppercase;
   text-decoration: none;
   display: inline-block;
   border-radius: 100px;
-  transition: all 2s;
+  transition: all .2s;
+  position: relative;
 }
 .btn:hover {
     transform: translateY(-7px);
@@ -114,6 +126,30 @@ body {
   
 
 .btn-white {
+  margin-top: 1rem;
   background-color: #fff;
   color: #777;
+}
+.btn::after{
+  content: "";
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  border-radius: 100px;
+  position: absolute;
+  top: 0;
+  left:0;
+  z-index: -1;
+  transition: all .4s;
+}
+.btn-white::after{
+  background-color: #fff;
+}
+.btn:hover::after{
+  transform: scaleX(1.5) scaleY(1.4);
+  opacity: 0;
+}
+.btn-animated{
+  animation: moveInButton .5s ease-out .75s;
+  animation-fill-mode: backwards;
 }
