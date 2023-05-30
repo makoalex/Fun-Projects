@@ -1,7 +1,9 @@
 /*import google fonts*/
-
 @import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200;300&family=Merriweather:wght@300&family=Montserrat:wght@100&display=swap');
 
+/* *{
+outline: red dashed 2px;
+} */
 /** style the entire page*/
 body {
   height: 100vh;
@@ -85,23 +87,64 @@ textarea {
   width: 100%;
   background: #210b2c;
 }
-#voice-btn{
-    margin: 2rem;
-    font-size: 2.2rem;
-    border-radius: 1rem;
-    border: 0;
-    background:#4ea8de ;
-    box-shadow: 0 0 0.2rem #fff, 0 0 0.2rem #fff, 0 0 1.5rem #00a1d5,
+#voice-btn {
+  margin: 2rem;
+  font-size: 2.2rem;
+  border-radius: 1rem;
+  border: 0;
+  background: #4ea8de;
+  box-shadow: 0 0 0.2rem #fff, 0 0 0.2rem #fff, 0 0 1.5rem #00a1d5,
     0 0 0.8rem #00a1d5, 0 0 1.5rem #00a1d5, inset 0 0 1.3rem #00a1d5;
 }
-#voice-btn:hover{
-    cursor: pointer;
-    background-color: #80ffdb;
+#voice-btn:hover {
+  cursor: pointer;
+  background-color: #80ffdb;
 }
-/**/
-/**/
-/**/
-/**/
+#voice-modal {
+  border: 2rem, solid, #d8dee2;
+  display: flex;
+  flex-direction: column;
+  width: 360px;
+  padding: 20px;
+  border-radius: 1rem;
+  border: 0.1rem solid #0be7c2;
+  background-color: #0f5a82;
+  box-shadow: 3.2px 4.1px #a20da2;
+}
+/*style modal header*/
+#modal-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+/*modal header h2*/
+#modal-header h2 {
+  text-align: center;
+  margin: 0 6.4rem;
+  font-family: 'Merriweather', serif;
+  font-size: 1rem;
+  color: #a3daff;
+}
+/*style the close x*/
+#close-modal {
+  cursor: pointer;
+  font-family: 'Merriweather', serif;
+  color: #a3daff;
+  background: transparent;
+  border: none;
+}
+/* voice selector*/
+#voice-list {
+  width: 100%;
+  height: 2rem;
+  border-radius: 12px;
+  font-family: 'Dosis', sans-serif;
+  cursor: pointer;
+  background-color: #282828;
+  color: #a3daff;
+  text-align: center;
+  appearance: none;
+}
 /**/
 /**/
 /**/
