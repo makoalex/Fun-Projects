@@ -1,47 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <title>Robo</title>
-  </head>
-  <body>
-    <!--    main box to hold everything-->
-    
-   
-    <div id="main-container">
-      <!--Voice selection module-->
-      <div id="voice-modal">
-        <!-- modal header with title and close button -->
-        <div id="modal-header">
-          <h2>Choose Voice</h2>
-          <!-- dropdown to select a voice -->
-          <button id="close-modal">X</button>
-        </div>
-        <select name="" id="voice-list"></select>
-      </div>
-      <!--footer-->
-      <div id="footer">
-        <button voice-btn>&#128172;</button>
-      </div>
-      <!--box for the robot voice-->
-      <div id="voice-machine-container">
-        <!--box for title-->
-        <h1 id="app-title">ROBOT VOICE</h1>
-        <!--box for text-->
-        <textarea name="" id="text-input" cols="30" rows="5"></textarea>
-        <!--box for speak-->
-        <div class="btn-container">
-          <button id="speak-btn">Speak</button>
-        </div>
-      </div>
-    </div>
-    <!-- footer language selection-->
-    <footer id="footer">
-      <button id="voice-btn">&#128172;</button>
-    </footer>
-    <script src="app.js"></script>
-  </body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- connect css styles -->
+		<link rel="stylesheet" href="style.css" />
+    <script defer src="app.js"></script>
+		<title> Voice Activator 🤖</title>
+	</head>
+	<body>
+		<!-- main box to hold everything -->
+		<main id="main-container">
+			<!-- box for robot voice machine -->
+			<section id="voice-machine-container">
+				<!-- box for title -->
+				<h1 id="app-title">The Voice Activator</h1>
+				<!-- box for for text -->
+				<textarea id="text-input"></textarea>
+				<!-- box for speak button -->
+				<article class="button-container">
+					<button id="speak-button">SPEAK</button>
+				</article>
+			</section>
+
+			<!-- voice selection modal -->
+			<section id="voice-modal">
+				<!-- modal header with title and close button -->
+				<article id="modal-header">
+					<h2>Choose Voice</h2>
+					<button id="close-modal">X</button>
+				</article>
+				<!-- dropdown to select a voice -->
+				<select id="voice-list"></select>
+			</section>
+			<!-- footer with button to open voices selection -->
+			<div id="footer">
+				<button id="voices-button">🗣️</button>
+			</div>
+		</main>
+
+		<!-- connect javascript file -->
+
+	</body>
 </html>
