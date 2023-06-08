@@ -1,46 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<!-- connect css styles -->
-		<link rel="stylesheet" href="style.css" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- connect css styles -->
+    <link rel="stylesheet" href="style.css" />
     <script defer src="app.js"></script>
-		<title> Voice Activator 🤖</title>
-	</head>
-	<body>
-		<!-- main box to hold everything -->
-		<main id="main-container">
-			<!-- box for robot voice machine -->
-			<section id="voice-machine-container">
-				<!-- box for title -->
-				<h1 id="app-title">The Voice Activator</h1>
-				<!-- box for for text -->
-				<textarea id="text-input"></textarea>
-				<!-- box for speak button -->
-				<article class="button-container">
-					<button id="speak-button">SPEAK</button>
-				</article>
-			</section>
+    <title>Voice Activator 🤖</title>
+  </head>
+  <body>
+    <main id="main-container">
+      <section id="voice-machine-container">
+        <h1 id="app-title">The Voice Activator</h1>
+        <textarea id="text-input"></textarea>
+        <article class="button-container">
+          <button id="speak-button">SPEAK</button>
+        </article>
+      </section>
 
-			<!-- voice selection modal -->
-			<section id="voice-modal">
-				<!-- modal header with title and close button -->
-				<article id="modal-header">
-					<h2>Choose Voice</h2>
-					<button id="close-modal">X</button>
-				</article>
-				<!-- dropdown to select a voice -->
-				<select id="voice-list"></select>
-			</section>
-			<!-- footer with button to open voices selection -->
-			<div id="footer">
-				<button id="voices-button">🗣️</button>
-			</div>
-		</main>
-
-		<!-- connect javascript file -->
-
-	</body>
+      <!-- voice selection modal -->
+      <section id="voice-modal">
+        <article id="modal-header">
+          <h2>Choose Voice</h2>
+          <button id="close-modal">X</button>
+        </article>
+        <select id="voice-list"></select>
+      </section>
+      <!-- footer with button to open voices selection -->
+      <div id="footer">
+        <button id="voices-button">🗣️</button>
+      </div>
+    </main>
+  </body>
 </html>
