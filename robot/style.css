@@ -1,5 +1,6 @@
 /*import google fonts*/
-@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200;300&family=Merriweather:wght@300&family=Montserrat:wght@100&display=swap');
+
+  @import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
 
 /* *{
 outline: red dashed 2px;
@@ -33,7 +34,7 @@ body {
 /*style title of app*/
 #app-title {
   color: #fff;
-  font-family: 'Dosis', sans-serif;
+  font-family: 'Orbitron', sans-serif;
   text-align: center;
   text-shadow: 1px 1px 2px #fff, 0 0 1em #bc00dd, 0 0 0.2em #bc00dd,
     0 0 2.8rem #bc00dd;
@@ -57,7 +58,7 @@ textarea {
   justify-content: space-evenly;
 }
 /*style speak button*/
-#speak-btn {
+#speak-button {
   font-family: 'Merriweather', serif;
   font-weight: 900;
   font-size: 1rem;
@@ -66,16 +67,19 @@ textarea {
   border-radius: 1rem;
   border: 0;
   width: 100%;
-  background-color: #492e7d;
+  background-color: #8845c6;
   color: #4ea8de;
   box-shadow: 0 0 0.2rem #fff, 0 0 0.2rem #fff, 0 0 1.5rem #9ef01a,
     0 0 0.8rem #9ef01a, 0 0 1.5rem #9ef01a, inset 0 0 1.3rem #9ef01a;
 }
-#speak-btn:hover {
+#speak-button:hover {
   cursor: pointer;
   color: #492e7d;
-  background-color: #4ea8de;
+  background-color: #2d6814;
+  box-shadow: 0 0 0.2rem #fff, 0 0 0.2rem #fff, 0 0 1.5rem #d971c9,
+    0 0 0.8rem #e3429b, 0 0 1.5rem #d971c9, inset 0 0 1.3rem #d971c9;
 }
+
 #footer {
   height: 3rem;
   display: flex;
@@ -88,7 +92,7 @@ textarea {
   width: 100%;
   background: #210b2c;
 }
-#voice-btn {
+#voices-button {
   margin: 2rem;
   font-size: 2.2rem;
   border-radius: 1rem;
@@ -97,7 +101,7 @@ textarea {
   box-shadow: 0 0 0.2rem #fff, 0 0 0.2rem #fff, 0 0 1.5rem #00a1d5,
     0 0 0.8rem #00a1d5, 0 0 1.5rem #00a1d5, inset 0 0 1.3rem #00a1d5;
 }
-#voice-btn:hover {
+#voices-button:hover {
   cursor: pointer;
   background-color: #80ffdb;
 }
@@ -105,14 +109,14 @@ textarea {
   border: 2rem, solid, #d8dee2;
   display: flex;
   flex-direction: column;
-  align-self: flex-start;
-  justify-content: end;
+  justify-content: center;
   width: 360px;
   padding: 20px;
   border-radius: 1rem;
   border: 0.1rem solid #0be7c2;
-  background-color: #0f5a82;
-  box-shadow: 3.2px 4.1px #a20da2;
+  background-color: #bc00dd;
+  box-shadow: 0 0 0.2rem #fff, 0 0 0.2rem #fff, 0 0 1.5rem #9ef01a,
+  0 0 0.8rem #9ef01a, 0 0 1.5rem #9ef01a, inset 0 0 1.3rem #9ef01a;
 }
 /*style modal header*/
 #modal-header {
@@ -123,16 +127,16 @@ textarea {
 /*modal header h2*/
 #modal-header h2 {
   text-align: center;
-  margin: 0 6.4rem;
+  margin: 0 7rem;
   font-family: 'Merriweather', serif;
   font-size: 1rem;
-  color: #a3daff;
+  color: #9ef01a;
 }
 /*style the close x*/
 #close-modal {
   cursor: pointer;
   font-family: 'Merriweather', serif;
-  color: #a3daff;
+  color: #9ef01a;
   background: transparent;
   border: none;
 }
@@ -144,7 +148,7 @@ textarea {
   font-family: 'Dosis', sans-serif;
   cursor: pointer;
   background-color: #282828;
-  color: #a3daff;
+  color: #9ef01a;
   text-align: center;
   appearance: none;
 }
