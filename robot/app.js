@@ -80,6 +80,11 @@ if (!('speechSynthesis' in window)) {
 	const voiceModal = document.getElementById('voice-modal');
 	// - get access to the close button on modal
 	const closeButton = document.getElementById('close-modal');
+  function closeModal() {
+    voiceModal.style.display = 'none';
+}
+closeButton.addEventListener('click', closeModal);
+speakButton.addEventListener('click', speakText);
 
 	// - hide modal
 	voiceModal.style.display = 'none';
@@ -103,7 +108,7 @@ if (!speechSynthesis in window) {
 
 window.speechSynthesis.onvoiceschanged = function () {
   const voices = window.speechSynthesis.getVoices();
-  console.log(voices);
+  console.log(' voices',voices);
 };
 
 // add voices to the voice list
@@ -113,6 +118,8 @@ function populateVoiceList() {
   const voices = speechSynthesis.getVoices();
   // - get all the english voices
   const enUSVoices = voices.filter((voice) => voice.lang === 'en-US');
+  console.log(' voices in populateVoiceList ',enUSVoices);
+
   // - add voices to select
   enUSVoices.forEach((voice, index) => {
     // create a new option
@@ -133,7 +140,6 @@ function populateVoiceList() {
 if (speechSynthesis.onvoiceschanged !== undefined) {
   speechSynthesis.onvoiceschanged = populateVoiceList;
 }
-
 
 // run the populateVoiceList function
 populateVoiceList();
