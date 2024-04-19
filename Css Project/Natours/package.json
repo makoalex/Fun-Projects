@@ -1,0 +1,18 @@
+{
+  "name": "boardgaming",
+  "version": "1.0.0",
+  "description": "landing page for boardGaming",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass saas/main.scss -o css/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "Fun Projects"
+  },
+  "author": "mako",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^9.0.0"
+  }
+}
