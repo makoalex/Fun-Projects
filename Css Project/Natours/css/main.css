@@ -99,6 +99,9 @@ body {
 .btn:hover {
   transform: translateY(-3px);
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.4); }
+  .btn:hover::after {
+    transform: scaleX(1.4) scaleY(1.8);
+    opacity: 0; }
 
 .btn:active {
   transform: translateY(-3px);
@@ -122,10 +125,6 @@ body {
   left: 0;
   z-index: -1;
   transition: all 0.4s; }
-
-.btn:hover::after {
-  transform: scaleX(1.4) scaleY(1.6);
-  opacity: 0; }
 
 .btn--animated {
   animation: moveInButton 0.4s ease-out 0.7s;
