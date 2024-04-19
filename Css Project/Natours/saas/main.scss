@@ -1,181 +1,21 @@
-$color-primary: #ff8500;
-$color-primary-light: #ffac33;
-$color-primary-dark: #b36700;
-$color-2nd: #5c677d;
-$color-2nd-light: #7a8599;
-$color-2nd-dark: #3f4a5b;
-$color-dark-grey: #777;
-$color-white: #fff;
-$color-black: #000;
-*,
-*::before,
-*::after {
-  margin: 0;
-  padding: 0;
-  box-sizing: inherit;
-}
+@import"abstracts/_variables";
+@import"abstracts/_mixins";
+@import"abstracts/_functions";
 
-html {
-  font-size: 62.5%;
-}
-body {
-  font-family: lato;
-  font-weight: 400;
-  /* font-size: 16px; */
-  line-height: 1.7;
-  color: $color-dark-grey;
-  padding: 2.5rem;
-  box-sizing: border-box;
-}
+@import"base/_base";
+@import"base/_animations";
+@import"base/typography";
+@import"base/utilities";
 
-.header {
-  height: 95vh;
-  background-image: linear-gradient(
-      to right,
-      rgba($color-2nd, 0.501),
-      rgba($color-primary, 0.5)
-    ),
-    url(../img/TaintedGrail_03.jpg);
-  background-size: cover;
-  background-position: top;
-  position: relative;
-  clip-path: polygon(0 0, 100% 0, 100% 74vh, 0 100%);
-  &__logo-box {
-    position: absolute;
-    top: 2rem;
-    left: 4rem;
-  }
-  &__logo {
-    height: 8rem;
-  }
+@import"components/_button";
+@import"components/header";
 
-  &__text-box {
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-  }
-}
-
-.heading-primary {
-  color: $color-white;
-  text-transform: uppercase;
-  backface-visibility: hidden;
-
-  &--main {
-    display: block;
-    font-size: 6rem;
-    font-weight: 400;
-    letter-spacing: 3.5rem;
-    animation-name: moveInLeft;
-    animation-duration: 2s;
-    animation-timing-function: ease-out;
-  }
-
-  &--sub {
-    display: block;
-    font-size: 2rem;
-    font-weight: 700;
-    letter-spacing: 1.74rem;
-    animation: moveInRight;
-    animation-duration: 2s;
-    animation-timing-function: ease-out;
-    margin-bottom: 3rem;
-  }
-}
-
-@keyframes moveInLeft {
-  0% {
-    opacity: 0;
-    transform: translateX(-10rem);
-  }
-  80% {
-    transform: translateX(1rem);
-  }
-  100% {
-    opacity: 1;
-    transform: translate(0);
-  }
-}
-@keyframes moveInRight {
-  0% {
-    opacity: 0;
-    transform: translateX(10rem);
-  }
-  80% {
-    transform: translateX(-1rem);
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-@keyframes moveInButton {
-  0% {
-    opacity: 0;
-    transform: translateY(30px);
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-.btn {
-  &:link,
-  &:visited {
-    font-size: 1.6rem;
-    margin-top: 3rem;
-    padding: 1.5rem 4rem;
-    text-transform: uppercase;
-    text-decoration: none;
-    display: inline-block;
-    border-radius: 10rem;
-    transition: all 0.2s;
-    position: relative;
-  }
-
-  &:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 1rem 2rem rgba($color-black, 0.4);
-
-    &::after {
-      transform: scaleX(1.4) scaleY(1.8);
-      opacity: 0;
-    }
-  }
-  &:active {
-    transform: translateY(-3px);
-
-    box-shadow: 0 0.5rem 1rem rgba($color-black, 0.2);
-  }
-
-  &--white {
-    margin-top: 1rem;
-    background-color: $color-white;
-    color: $color-dark-grey;
-
-    &::after {
-      background-color: $color-white;
-    }
-  }
-  
-  &::after {
-    content: "";
-    display: inline-block;
-    height: 100%;
-    width: 100%;
-    border-radius: 10rem;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1;
-    transition: all 0.4s;
-  }
+@import"pages/_home";
 
 
-  &--animated {
-    animation: moveInButton 0.4s ease-out 0.7s;
-    animation-fill-mode: backwards&;
-  }
-}
+
+
+
+
+
+
