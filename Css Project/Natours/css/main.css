@@ -233,14 +233,14 @@ body {
     transform: translateY(-1.5rem) scale(1.05); }
 
 .card {
-  max-height: 50rem;
+  height: 50rem;
   perspective: 150rem;
   -moz-perspective: 150rem;
   position: relative; }
   .card__side {
     color: #777;
     font-size: 2rem;
-    height: 45rem;
+    height: 50rem;
     width: 100%;
     transition: all 1.5s ease;
     position: absolute;
@@ -290,7 +290,7 @@ body {
       margin: 0 auto; }
       .card__details ul li {
         text-align: center;
-        padding: .5rem; }
+        padding: 1rem; }
         .card__details ul li:not(:last-child) {
           border-bottom: 1px solid #bcb5b5; }
 

@@ -1,6 +1,6 @@
 .card {
   // functionality
-  max-height: 50rem;
+  height: 50rem;
   perspective: 150rem;
   -moz-perspective: 150rem;
   position: relative;
@@ -8,7 +8,7 @@
   &__side {
     color: $color-dark-grey;
     font-size: 2rem;
-    height: 45rem;
+    height: 50rem;
     width: 100%;
     transition: all 1.5s ease;
     position: absolute;
@@ -26,6 +26,7 @@
       transform: rotateY(180deg);
 
       &-1 {
+    
         background-image: linear-gradient(
           to right bottom,
           $color-2nd 10%,
@@ -87,7 +88,7 @@
       margin: 0 auto;
       li {
         text-align: center;
-        padding: .5rem;
+        padding: 1rem;
         &:not(:last-child) {
           border-bottom: 1px solid $color-grey-light-2;
         }
