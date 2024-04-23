@@ -100,6 +100,12 @@ body {
 .u-margin-bottom-small {
   margin-bottom: 1.5rem; }
 
+.u-margin-bottom-medium {
+  margin-bottom: 4rem; }
+
+.u-margin-x-small {
+  margin: 0 1rem; }
+
 .btn:link, .btn:visited {
   font-size: 1.6rem;
   margin-top: 3rem;
@@ -188,16 +194,16 @@ body {
     position: absolute;
     z-index: 10;
     transition: all .2s;
-    outline-offset: 1.8rem; }
+    outline-offset: 1rem; }
     .composition__photo--p1 {
       left: 0;
-      top: -2rem; }
+      top: -4rem; }
     .composition__photo--p2 {
-      right: 0;
-      top: 4rem; }
+      right: 0rem;
+      top: 2rem; }
     .composition__photo--p3 {
       left: 20%;
-      top: 14rem; }
+      top: 10rem; }
     .composition__photo:hover {
       outline: 1.2rem solid #f3722c;
       transform: scale(1.05) translateY(-0.7rem);
@@ -205,6 +211,25 @@ body {
       z-index: 20; }
   .composition:hover .composition__photo:not(:hover) {
     transform: scale(0.9); }
+
+.feature-box {
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 2rem 1.5rem;
+  font-size: 1.4rem;
+  text-align: center;
+  border-radius: 3px;
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.2);
+  transition: all 0.3s;
+  height: 45vh; }
+  .feature-box__icon {
+    font-size: 5rem;
+    margin-bottom: 1rem;
+    display: inline-block;
+    background-image: linear-gradient(to right, #f9844a, #b36700);
+    background-clip: text;
+    color: transparent; }
+  .feature-box:hover {
+    transform: translateY(-1.5rem) scale(1.05); }
 
 .row {
   max-width: 114rem;
@@ -235,4 +260,13 @@ body {
 .section-about {
   background-color: #f7f7f7;
   padding: 20rem 0;
-  margin-top: -21vh; }
+  margin-top: -24vh; }
+
+.section-features {
+  padding: 20rem 0;
+  margin-top: -13rem;
+  background-image: linear-gradient(to right, rgba(115, 100, 138, 0.7), rgba(243, 114, 44, 0.5)), url(../../img/knight.jpeg);
+  background-size: cover;
+  transform: skewY(-7deg); }
+  .section-features > * {
+    transform: skewY(7deg); }

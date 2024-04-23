@@ -1,6 +1,21 @@
-.section-about{
-    background-color: $color-grey-light-1;
-    padding: 20rem 0;
-    // height: 40vh;
-    margin-top: -21vh;
+.section-about {
+  background-color: $color-grey-light-1;
+  padding: 20rem 0;
+  margin-top: -24vh;
+}
+
+.section-features {
+  padding: 20rem 0;
+  margin-top: -13rem;
+  background-image: linear-gradient(
+      to right,
+      rgba($color-2nd, 0.7),
+      rgba($color-primary, 0.5)
+    ),
+    url(../../img/knight.jpeg);
+  background-size: cover;
+  transform: skewY(-7deg);
+  & > * {
+    transform: skewY(7deg);
+  }
 }
