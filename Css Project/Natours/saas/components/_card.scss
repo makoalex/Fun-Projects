@@ -1,11 +1,12 @@
 .card {
-  height: 45rem;
+  // functionality
+  max-height: 50rem;
   perspective: 150rem;
   -moz-perspective: 150rem;
   position: relative;
 
   &__side {
-    color: beige;
+    color: $color-dark-grey;
     font-size: 2rem;
     height: 45rem;
     width: 100%;
@@ -14,6 +15,7 @@
     top: 0;
     left: 0;
     backface-visibility: hidden;
+    overflow: hidden;
     border-radius: 3px;
     box-shadow: 0 1.5rem 4rem rgba($color-black, 0.15);
 
@@ -26,8 +28,8 @@
       &-1 {
         background-image: linear-gradient(
           to right bottom,
-          $color-2nd,
-          $color-2nd-dark 100%
+          $color-2nd 10%,
+          $color-2nd-light 100%
         );
       }
     }
@@ -38,5 +40,58 @@
   }
   &:hover &__side--back {
     transform: rotateY(0);
+  }
+  //   front card
+  &__picture {
+    background-size: cover;
+    height: 22rem;
+    background-blend-mode: color;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+
+    &--1 {
+      background-image: linear-gradient(
+          to right bottom,
+          $color-2nd,
+          $color-2nd-dark
+        ),
+        url(../../img/card1.webp);
+    }
+  }
+  &__heading {
+    position: absolute;
+    font-size: 2rem;
+    font-weight: 400;
+    text-align: left;
+    text-transform: uppercase;
+    left: 2rem;
+    top: 16rem;
+    color: $color-white;
+  }
+  &__heading--span {
+    padding: 0.8rem 2rem;
+    &--1 {
+      background-image: linear-gradient(
+        to right,
+        rgba($color-2nd, 0.7),
+        rgba($color-2nd-dark, 0.2)
+      );
+    }
+  }
+  &__details {
+    font-size: $default-font-size;
+    padding: 1rem;
+    ul {
+      list-style: none;
+      width: 80%;
+      margin: 0 auto;
+      li {
+        text-align: center;
+        padding: .5rem;
+        &:not(:last-child) {
+          border-bottom: 1px solid $color-grey-light-2;
+        }
+      }
+    }
   }
 }

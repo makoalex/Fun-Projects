@@ -1,29 +1,30 @@
 .header {
-    height: 95vh;
-    background-image: linear-gradient(
-        to right,
-        rgba($color-2nd, 0.501),
-        rgba($color-primary, 0.5)
-      ),
-      url(../img/TaintedGrail_03.jpg);
-    background-size: cover;
-    background-position: top;
-    position: relative;
-    clip-path: polygon(0 0, 100% 0, 100% 74vh, 0 100%);
-    &__logo-box {
-      position: absolute;
-      top: 2rem;
-      left: 4rem;
-    }
-    &__logo {
-      height: 8rem;
-    }
-  
-    &__text-box {
-      position: absolute;
-      top: 40%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      text-align: center;
-    }
+  height: 95vh;
+  background-image: linear-gradient(
+      to right,
+      rgba($color-2nd, 0.501),
+      rgba($color-primary, 0.5)
+    ),
+    url(../img/TaintedGrail_03.jpg);
+  background-size: cover;
+  background-position: top;
+  position: relative;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 74vh, 0 100%);
+  &__logo-box {
+    position: absolute;
+    top: 2rem;
+    left: 4rem;
   }
+  &__logo {
+    height: 8rem;
+  }
+
+  &__text-box {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+}
