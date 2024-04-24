@@ -31,6 +31,14 @@
           $color-2nd-light 100%
         );
       }
+
+      &-2 {
+        background-image: linear-gradient(
+          to right bottom,
+          $color-card-2nd-green 25%,
+          $color-card-blue 75%
+        );
+      }
     }
   }
 
@@ -56,6 +64,15 @@
         ),
         url(../../img/card1.webp);
     }
+    &--2 {
+      background-blend-mode: hue;
+      background-image: linear-gradient(
+          to right bottom,
+          $color-card-2nd-green,
+          $color-card-blue
+        ),
+        url(../../img/unnamed.png);
+    }
   }
   &__heading {
     position: absolute;
@@ -74,6 +91,13 @@
         to right,
         rgba($color-2nd, 0.7),
         rgba($color-2nd-dark, 0.2)
+      );
+    }
+    &--2 {
+      background-image: linear-gradient(
+        to right,
+        rgba($color-card-2nd-green, 0.7),
+        rgba($color-card-blue, 0.2)
       );
     }
   }
@@ -105,12 +129,11 @@
   }
   &__info-box {
     color: $color-white;
-
   }
   &__info-only {
     font-size: 1.6rem;
     text-transform: uppercase;
-    letter-spacing: .2rem;
+    letter-spacing: 0.2rem;
   }
   &__price-val {
     font-size: 6rem;

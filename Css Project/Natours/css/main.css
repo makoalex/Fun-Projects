@@ -256,6 +256,8 @@ body {
       transform: rotateY(180deg); }
       .card__side--back-1 {
         background-image: linear-gradient(to right bottom, #73648a 10%, #7a8599 100%); }
+      .card__side--back-2 {
+        background-image: linear-gradient(to right bottom, #2d6a4f 25%, #013a63 75%); }
   .card:hover .card__side--front {
     transform: rotateY(-180deg); }
   .card:hover .card__side--back {
@@ -268,6 +270,9 @@ body {
     clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%); }
     .card__picture--1 {
       background-image: linear-gradient(to right bottom, #73648a, #3f4a5b), url(../../img/card1.webp); }
+    .card__picture--2 {
+      background-blend-mode: hue;
+      background-image: linear-gradient(to right bottom, #2d6a4f, #013a63), url(../../img/unnamed.png); }
   .card__heading {
     position: absolute;
     font-size: 2rem;
@@ -281,6 +286,8 @@ body {
     padding: 0.8rem 2rem; }
     .card__heading--span--1 {
       background-image: linear-gradient(to right, rgba(115, 100, 138, 0.7), rgba(63, 74, 91, 0.2)); }
+    .card__heading--span--2 {
+      background-image: linear-gradient(to right, rgba(45, 106, 79, 0.7), rgba(1, 58, 99, 0.2)); }
   .card__details {
     font-size: 1.6rem;
     padding: 1rem; }
@@ -306,7 +313,7 @@ body {
   .card__info-only {
     font-size: 1.6rem;
     text-transform: uppercase;
-    letter-spacing: .2rem; }
+    letter-spacing: 0.2rem; }
   .card__price-val {
     font-size: 6rem;
     font-weight: 100; }
