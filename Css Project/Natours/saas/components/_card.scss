@@ -24,9 +24,7 @@
     }
     &--back {
       transform: rotateY(180deg);
-
       &-1 {
-    
         background-image: linear-gradient(
           to right bottom,
           $color-2nd 10%,
@@ -94,5 +92,28 @@
         }
       }
     }
+  }
+  //   back card
+  &__cta {
+    text-align: center;
+    width: 80%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: auto;
+  }
+  &__info-box {
+    color: $color-white;
+
+  }
+  &__info-only {
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+  }
+  &__price-val {
+    font-size: 6rem;
+    font-weight: 100;
   }
 }

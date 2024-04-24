@@ -293,6 +293,23 @@ body {
         padding: 1rem; }
         .card__details ul li:not(:last-child) {
           border-bottom: 1px solid #bcb5b5; }
+  .card__cta {
+    text-align: center;
+    width: 80%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: auto; }
+  .card__info-box {
+    color: #fff; }
+  .card__info-only {
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    letter-spacing: .2rem; }
+  .card__price-val {
+    font-size: 6rem;
+    font-weight: 100; }
 
 .row {
   max-width: 114rem;
